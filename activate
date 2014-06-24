@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "activating virtualenv"
+. ../venv/bin/activate

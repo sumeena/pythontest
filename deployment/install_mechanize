@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /tmp/mechanize
+su gongaloo -c '. /var/local/sites/gongaloo/venv/bin/activate python setup.py install'

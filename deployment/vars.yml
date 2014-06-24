@@ -1,0 +1,11 @@
+project_name: gongaloo
+project_root: /var/local/sites/{{project_name}}
+project_port: 8000
+hostname: localhost
+source_location: "/vagrant/"
+source_location_auto_remove: false
+dbuser: gongaloo
+dbpassword: 4EjuzuHaBeyAPhuxeq3wragA6ECRUk9SUSpaspEdrUnu9rAXEpurE92ucRefr5fr
+dbname: gongaloo
+database_url: postgres://{{dbuser}}:{{dbpassword}}@localhost:5432/{{dbname}}
+locale: en_US.UTF-8

@@ -1,0 +1,23 @@
+---
+- name: Install required system packages.
+  action: apt pkg={{item}} state=installed update-cache=yes state=installed
+  sudo: yes
+  with_items:
+    - chromium-browser
+    - firefox
+    - sysstat
+    - xvfb
+    - x11vnc
+    - fluxbox
+    - tcpwatch-httpproxy
+
+
+
+# Xvfb, x11vnc, fluxbox
+- name: Install Xvfb init item
+  action: copy src=templates/xvfb dest=/etc/init.d/xvfb mode=755 owner=root group=root
+  sudo: yes
+
+- name: Update RC.D with xfvb init item
+  action: command update-rc.d xvfb defaults
+  sudo: yes

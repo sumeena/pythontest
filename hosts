@@ -1,0 +1,8 @@
+[webservers]
+192.168.33.105
+
+[dbservers]
+192.168.33.105
+
+[testingservers]
+192.168.33.105
